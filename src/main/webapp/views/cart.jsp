@@ -39,7 +39,7 @@
       <!--WARNING: Respond.js doesn't work if you view the page via file://-->
       <!--[if lt IE 9]><script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script><script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
     </head>
-    
+
     <body class="ps-loading">
       <div class="header--sidebar"></div>
       <header class="header">
@@ -175,41 +175,30 @@
                 <input class="form-control" type="text" placeholder="Search Productâ¦">
                 <button><i class="ps-icon-search"></i></button>
               </form>
-              <div class="ps-cart"><a class="ps-cart__toggle" href="#"><span><i>20</i></span><i
+              <div class="ps-cart">
+                <a class="ps-cart__toggle" id="toggle-cart-btn"><span><i>20</i></span><i
                     class="ps-icon-shopping-cart"></i></a>
                 <div class="ps-cart__listing">
                   <div class="ps-cart__content">
-                    <div class="ps-cart-item"><a class="ps-cart-item__close" href="#"></a>
-                      <div class="ps-cart-item__thumbnail"><a href="product-detail.jsp"></a><img
-                          src="images/cart-preview/1.jpg" alt=""></div>
-                      <div class="ps-cart-item__content"><a class="ps-cart-item__title"
-                          href="product-detail.jsp">Amazinâ Glazinâ</a>
-                        <p><span>Quantity:<i>12</i></span><span>Total:<i>Â£176</i></span></p>
-                      </div>
-                    </div>
-                    <div class="ps-cart-item"><a class="ps-cart-item__close" href="#"></a>
-                      <div class="ps-cart-item__thumbnail"><a href="product-detail.jsp"></a><img
-                          src="images/cart-preview/2.jpg" alt=""></div>
-                      <div class="ps-cart-item__content"><a class="ps-cart-item__title" href="product-detail.jsp">The
-                          Crusty Croissant</a>
-                        <p><span>Quantity:<i>12</i></span><span>Total:<i>Â£176</i></span></p>
-                      </div>
-                    </div>
-                    <div class="ps-cart-item"><a class="ps-cart-item__close" href="#"></a>
-                      <div class="ps-cart-item__thumbnail"><a href="product-detail.jsp"></a><img
-                          src="images/cart-preview/3.jpg" alt=""></div>
-                      <div class="ps-cart-item__content"><a class="ps-cart-item__title" href="product-detail.jsp">The
-                          Rolling Pin</a>
-                        <p><span>Quantity:<i>12</i></span><span>Total:<i>Â£176</i></span></p>
-                      </div>
-                    </div>
+                    <table id="cart-content">
+                      <thead>
+                        <tr>
+                          <th></th>
+                        </tr>
+                      </thead>
+                      <tbody></tbody>
+                    </table>
+                    <p class="total-container" id="total-price"></p>
                   </div>
                   <div class="ps-cart__total">
-                    <p>Number of items:<span>36</span></p>
-                    <p>Item Total:<span>Â£528.00</span></p>
+                    <p>
+                      Number of items:<span>36</span>
+                    </p>
+                    <p class="total-container" id="total-price"></p>
                   </div>
-                  <div class="ps-cart__footer"><a class="ps-btn" href="cart.jsp">Check out<i
-                        class="ps-icon-arrow-left"></i></a></div>
+                  <div class="ps-cart__footer">
+                    <a class="ps-btn" href="../../views/cart.jsp">Check out<i class="ps-icon-arrow-left"></i></a>
+                  </div>
                 </div>
               </div>
               <div class="menu-toggle"><span></span></div>
@@ -295,34 +284,60 @@
                   </tr>
                 </tbody>
               </table> -->
-              
-              <div class="ps-cart__content" style="color: black;">
-                    <div class="ps-cart-item"><a class="ps-cart-item__close" href="#"></a>
+              <!--               <span>Total:<i class="cart-price" id="cart-price" style="color: black;">$176</i></span> -->
+              <div class="ps-cart__content" id="ps-cart__content" style="color: black;">
+                <!--  <div class="ps-cart-item" id="ps-cart-item"><a class="ps-cart-item__close" href="#"></a>
                       <div class="ps-cart-item__thumbnail"><a href="../../views/product-detail.jsp"></a><img
                           src="../images/cart-preview/1.jpg" alt=""></div>
                       <div class="ps-cart-item__content"><a class="ps-cart-item__title" style="color: black;"
                           href="../../views/product-detail.jsp">Amazin’ Glazin’</a>
-                        <p><span>Quantity:<i class="cart-quantity"  style="color: black;">12</i></span><span>Total:<i class="cart-price" style="color: black;">£176</i></span></p>
+                        <p><span>Quantity:</span></p>
                       </div>
-                    </div>
-                    <div class="ps-cart-item"><a class="ps-cart-item__close" href="#"></a>
-                      <div class="ps-cart-item__thumbnail"><a href="../../views/product-detail.jsp"></a><img
-                          src="../images/cart-preview/2.jpg" alt=""></div>
-                      <div class="ps-cart-item__content"><a class="ps-cart-item__title" style="color: black;";
-                          href="../../views/product-detail.jsp">The Crusty Croissant</a>
-                        <p><span>Quantity:<i class="cart-quantity"  style="color: black;">12</i></span><span>Total:<i class="cart-price" style="color: black;">£176</i></span></p>
-                      </div>
-                    </div>
-                    <div class="ps-cart-item"><a class="ps-cart-item__close" href="#"></a>
-                      <div class="ps-cart-item__thumbnail"><a href="../../views/product-detail.jsp"></a><img
-                          src="../images/cart-preview/3.jpg" alt=""></div>
-                      <div class="ps-cart-item__content"><a class="ps-cart-item__title" style="color: black;
-                          href="../../views/product-detail.jsp" >The Rolling Pin</a>
-                        <p><span>Quantity:<i class="cart-quantity"  style="color: black;">12</i></span><span>Total:<i class="cart-price" style="color: black;">£176</i></span></p>
-                      </div>
-                    </div>
+                      <input type="number" value="1"  id="cart-quantity" />
+                      <div id="cart-price" class="cart-price" >
+                      		$176
+                      	</div>
+                    </div> -->
+                <!--                     <div class="ps-cart-item" id="ps-cart-item"><a class="ps-cart-item__close" href="#"></a> -->
+                <!--                       <div class="ps-cart-item__thumbnail"><a href="../../views/product-detail.jsp"></a><img -->
+                <!--                           src="../images/cart-preview/2.jpg" alt=""></div> -->
+                <!--                       <div class="ps-cart-item__content"><a class="ps-cart-item__title" style="color: black;"; -->
+                <!--                           href="../../views/product-detail.jsp">The Crusty Croissant</a> -->
+                <!--                         <p><span>Quantity:<input type="number" value="1" class="cart-quantity" id="cart-quantity" /></span></p> -->
+                <!--                       </div> -->
+                <!--                       <div  class="cart-price" > -->
+                <!--                       		$176 -->
+                <!--                       	</div> -->
+                <!--                     </div> -->
+                <!--                     <div class="ps-cart-item" id="ps-cart-item"><a class="ps-cart-item__close" href="#"></a> -->
+                <!--                       <div class="ps-cart-item__thumbnail"><a href="../../views/product-detail.jsp"></a><img -->
+                <!--                           src="../images/cart-preview/3.jpg" alt=""></div> -->
+                <!--                       <div class="ps-cart-item__content"><a class="ps-cart-item__title" style="color: black; -->
+                <!--                           href="../../views/product-detail.jsp" >The Rolling Pin</a> -->
+                <!--                         <p><span>Quantity:<input type="number" value="1" class="cart-quantity" id="cart-quantity" /></span></p> -->
+
+                <!--                       </div> -->
+                <!--                       <div class="cart-price" > -->
+                <!--                       		$176 -->
+                <!--                       	</div> -->
+                <!--                     </div> -->
+
+                <div class="cart-box">
+                  <img class="cart-img" />
+                  <div class="detail-box">
+                    <div class="cart-product-title">shoes</div>
+                    <div class="cart-price">$25.2</div>
+                    <input type="number" value="1" class="cart-quantity" />
                   </div>
-              
+                  <i class="ps-cart-item__close cart-remove">X</i>
+                </div>
+              </div>
+
+              <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price">$0</div>
+              </div>
+              <!--               <h3>Total Price: <span class="cart-total" id="cart-total"> 0$</span></h3> -->
               <div class="ps-cart__actions">
                 <div class="ps-cart__promotion">
                   <div class="form-group">
@@ -334,8 +349,9 @@
                     <button class="ps-btn ps-btn--gray">Continue Shopping</button>
                   </div>
                 </div>
-                <div class="ps-cart__total">
-                  <h3>Total Price: <span> 0 $</span></h3><a class="ps-btn" href="checkout.jsp">Process to
+                <div id="ps-cart__total" class="ps-cart__total">
+                  $0
+                  <a class="ps-btn" href="checkout.jsp">Process to
                     checkout<i class="ps-icon-next"></i></a>
                 </div>
               </div>

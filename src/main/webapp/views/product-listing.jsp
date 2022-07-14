@@ -178,41 +178,30 @@
                 <input class="form-control" type="text" placeholder="Search Productâ¦">
                 <button><i class="ps-icon-search"></i></button>
               </form>
-              <div class="ps-cart"><a class="ps-cart__toggle" href="#"><span><i>20</i></span><i
+              <div class="ps-cart">
+                <a class="ps-cart__toggle" id="toggle-cart-btn"><span><i>20</i></span><i
                     class="ps-icon-shopping-cart"></i></a>
                 <div class="ps-cart__listing">
                   <div class="ps-cart__content">
-                    <div class="ps-cart-item"><a class="ps-cart-item__close" href="#"></a>
-                      <div class="ps-cart-item__thumbnail"><a href="product-detail.jsp"></a><img
-                          src="images/cart-preview/1.jpg" alt=""></div>
-                      <div class="ps-cart-item__content"><a class="ps-cart-item__title"
-                          href="product-detail.jsp">Amazinâ Glazinâ</a>
-                        <p><span>Quantity:<i>12</i></span><span>Total:<i>Â£176</i></span></p>
-                      </div>
-                    </div>
-                    <div class="ps-cart-item"><a class="ps-cart-item__close" href="#"></a>
-                      <div class="ps-cart-item__thumbnail"><a href="product-detail.jsp"></a><img
-                          src="images/cart-preview/2.jpg" alt=""></div>
-                      <div class="ps-cart-item__content"><a class="ps-cart-item__title" href="product-detail.jsp">The
-                          Crusty Croissant</a>
-                        <p><span>Quantity:<i>12</i></span><span>Total:<i>Â£176</i></span></p>
-                      </div>
-                    </div>
-                    <div class="ps-cart-item"><a class="ps-cart-item__close" href="#"></a>
-                      <div class="ps-cart-item__thumbnail"><a href="product-detail.jsp"></a><img
-                          src="images/cart-preview/3.jpg" alt=""></div>
-                      <div class="ps-cart-item__content"><a class="ps-cart-item__title" href="product-detail.jsp">The
-                          Rolling Pin</a>
-                        <p><span>Quantity:<i>12</i></span><span>Total:<i>Â£176</i></span></p>
-                      </div>
-                    </div>
+                    <table id="cart-content">
+                      <thead>
+                        <tr>
+                          <th></th>
+                        </tr>
+                      </thead>
+                      <tbody></tbody>
+                    </table>
+                    <p class="total-container" id="total-price"></p>
                   </div>
                   <div class="ps-cart__total">
-                    <p>Number of items:<span>36</span></p>
-                    <p>Item Total:<span>Â£528.00</span></p>
+                    <p>
+                      Number of items:<span>36</span>
+                    </p>
+                    <p class="total-container" id="total-price"></p>
                   </div>
-                  <div class="ps-cart__footer"><a class="ps-btn" href="cart.jsp">Check out<i
-                        class="ps-icon-arrow-left"></i></a></div>
+                  <div class="ps-cart__footer">
+                    <a class="ps-btn" href="../../views/cart.jsp">Check out<i class="ps-icon-arrow-left"></i></a>
+                  </div>
                 </div>
               </div>
               <div class="menu-toggle"><span></span></div>
@@ -262,8 +251,8 @@
                   <div class="ps-shoe__thumbnail">
                     <div class="ps-badge"><span>New</span></div>
                     <div class="ps-badge ps-badge--sale ps-badge--2nd"><span>-35%</span></div><a
-                      class="ps-shoe__favorite" href="#"><i class="ps-icon-heart"></i></a><img src="../images/shoe/1.jpg"
-                      alt=""><a class="ps-shoe__overlay" href="product-detail.jsp"></a>
+                      class="ps-shoe__favorite" href="#"><i class="ps-icon-heart"></i></a><img
+                      src="../images/shoe/1.jpg" alt=""><a class="ps-shoe__overlay" href="product-detail.jsp"></a>
                   </div>
                   <div class="ps-shoe__content">
                     <div class="ps-shoe__variants">
@@ -499,8 +488,8 @@
               <div class="ps-product__column">
                 <div class="ps-shoe mb-30">
                   <div class="ps-shoe__thumbnail"><a class="ps-shoe__favorite" href="#"><i
-                        class="ps-icon-heart"></i></a><img src="../images/shoe/10.jpg" alt=""><a class="ps-shoe__overlay"
-                      href="product-detail.jsp"></a>
+                        class="ps-icon-heart"></i></a><img src="../images/shoe/10.jpg" alt=""><a
+                      class="ps-shoe__overlay" href="product-detail.jsp"></a>
                   </div>
                   <div class="ps-shoe__content">
                     <div class="ps-shoe__variants">
@@ -527,8 +516,8 @@
                   <div class="ps-shoe__thumbnail">
                     <div class="ps-badge"><span>New</span></div>
                     <div class="ps-badge ps-badge--sale ps-badge--2nd"><span>-35%</span></div><a
-                      class="ps-shoe__favorite" href="#"><i class="ps-icon-heart"></i></a><img src="../images/shoe/1.jpg"
-                      alt=""><a class="ps-shoe__overlay" href="product-detail.jsp"></a>
+                      class="ps-shoe__favorite" href="#"><i class="ps-icon-heart"></i></a><img
+                      src="../images/shoe/1.jpg" alt=""><a class="ps-shoe__overlay" href="product-detail.jsp"></a>
                   </div>
                   <div class="ps-shoe__content">
                     <div class="ps-shoe__variants">
@@ -764,8 +753,8 @@
               <div class="ps-product__column">
                 <div class="ps-shoe mb-30">
                   <div class="ps-shoe__thumbnail"><a class="ps-shoe__favorite" href="#"><i
-                        class="ps-icon-heart"></i></a><img src="../images/shoe/10.jpg" alt=""><a class="ps-shoe__overlay"
-                      href="product-detail.jsp"></a>
+                        class="ps-icon-heart"></i></a><img src="../images/shoe/10.jpg" alt=""><a
+                      class="ps-shoe__overlay" href="product-detail.jsp"></a>
                   </div>
                   <div class="ps-shoe__content">
                     <div class="ps-shoe__variants">
@@ -792,8 +781,8 @@
                   <div class="ps-shoe__thumbnail">
                     <div class="ps-badge"><span>New</span></div>
                     <div class="ps-badge ps-badge--sale ps-badge--2nd"><span>-35%</span></div><a
-                      class="ps-shoe__favorite" href="#"><i class="ps-icon-heart"></i></a><img src="../images/shoe/1.jpg"
-                      alt=""><a class="ps-shoe__overlay" href="product-detail.jsp"></a>
+                      class="ps-shoe__favorite" href="#"><i class="ps-icon-heart"></i></a><img
+                      src="../images/shoe/1.jpg" alt=""><a class="ps-shoe__overlay" href="product-detail.jsp"></a>
                   </div>
                   <div class="ps-shoe__content">
                     <div class="ps-shoe__variants">
@@ -1029,8 +1018,8 @@
               <div class="ps-product__column">
                 <div class="ps-shoe mb-30">
                   <div class="ps-shoe__thumbnail"><a class="ps-shoe__favorite" href="#"><i
-                        class="ps-icon-heart"></i></a><img src="../images/shoe/10.jpg" alt=""><a class="ps-shoe__overlay"
-                      href="product-detail.jsp"></a>
+                        class="ps-icon-heart"></i></a><img src="../images/shoe/10.jpg" alt=""><a
+                      class="ps-shoe__overlay" href="product-detail.jsp"></a>
                   </div>
                   <div class="ps-shoe__content">
                     <div class="ps-shoe__variants">
