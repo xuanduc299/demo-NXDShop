@@ -230,33 +230,7 @@
 						<a class="ps-cart__toggle" id="toggle-cart-btn"><span><i>20</i></span><i
 							class="ps-icon-shopping-cart"></i></a>
 						<div class="ps-cart__listing">
-
-							<div class="ps-cart__content">
-								<!-- <div class="ps-cart-item"><a class="ps-cart-item__close" href="#"></a>
-                      <div class="ps-cart-item__thumbnail"><a href="../../views/product-detail.jsp"></a><img
-                          src="../images/cart-preview/1.jpg" alt=""></div>
-                      <div class="ps-cart-item__content"><a class="ps-cart-item__title"
-                          href="../../views/product-detail.jsp">Amazin’ Glazin’</a>
-                        <p><span>Quantity:<i>12</i></span><span>Total:<i>£176</i></span></p>
-                      </div>
-                    </div>
-                    <div class="ps-cart-item"><a class="ps-cart-item__close" href="#"></a>
-                      <div class="ps-cart-item__thumbnail"><a href="../../views/product-detail.jsp"></a><img
-                          src="../images/cart-preview/2.jpg" alt=""></div>
-                      <div class="ps-cart-item__content"><a class="ps-cart-item__title"
-                          href="../../views/product-detail.jsp">The Crusty Croissant</a>
-                        <p><span>Quantity:<i>12</i></span><span>Total:<i>£176</i></span></p>
-                      </div>
-                    </div>
-                    <div class="ps-cart-item"><a class="ps-cart-item__close" href="#"></a>
-                      <div class="ps-cart-item__thumbnail"><a href="../../views/product-detail.jsp"></a><img
-                          src="../images/cart-preview/3.jpg" alt=""></div>
-                      <div class="ps-cart-item__content"><a class="ps-cart-item__title"
-                          href="../../views/product-detail.jsp">The Rolling Pin</a>
-                        <p><span>Quantity:<i>12</i></span><span>Total:<i>£176</i></span></p>
-                      </div>
-                    </div>-->
-
+							<div class="ps-cart__content">						
 								<table id="cart-content">
 									<thead>
 										<tr>
@@ -448,17 +422,17 @@
 												<span>-35%</span>
 											</div>
 											<a class="ps-shoe__favorite"><i class="ps-icon-heart"></i></a>
-											<img src="../images/shoe/shoes-01.jpg" alt=""><a
+											<img src="../images/shoe/shoes-04.jpg" alt=""><a
 												class="ps-shoe__overlay"
-												href="../../views/product-detail.jsp"></a>
+												></a>
 										</div>
 										<div class="ps-shoe__content">
 											<div class="ps-shoe__variants">
 												<div class="ps-shoe__variant normal">
-													<img src="../images/shoe/shoes-02.jpg" alt=""><img
-														src="../images/shoe/3.jpg" alt=""><img
-														src="../images/shoe/4.jpg" alt=""><img
-														src="../images/shoe/5.jpg" alt="">
+													<img src="../images/shoe/shoes-04.jpg" alt=""><img
+														src="../images/shoe/shoes-01.jpg" alt=""><img
+														src="../images/shoe/shoes-03.jpg" alt=""><img
+														src="../images/shoe/shoes-04.jpg" alt="">
 												</div>
 												<select class="ps-rating ps-shoe__rating">
 													<option value="1">1</option>
@@ -497,7 +471,7 @@
 											<a class="ps-shoe__favorite"><i class="ps-icon-heart"></i></a>
 											<img src="../images/shoe/shoes-02.jpg" alt=""><a
 												class="ps-shoe__overlay"
-												href="../../views/product-detail.jsp"></a>
+												></a>
 										</div>
 										<div class="ps-shoe__content">
 											<div class="ps-shoe__variants">
@@ -516,7 +490,7 @@
 												</select>
 											</div>
 											<div class="ps-shoe__detail">
-												<a class="ps-shoe__name" href="#">Air Jordan 7 Retro</a>
+												<a class="ps-shoe__name" href="#">Airs Jordan 7 Retro</a>
 												<p class="ps-shoe__categories">
 													<a href="#">Men shoes</a>,<a href="#"> Nike</a>,<a href="#">
 														Jordan</a>
@@ -544,12 +518,12 @@
 											<a class="ps-shoe__favorite"><i class="ps-icon-heart"></i></a>
 											<img src="../images/shoe/shoes-03.jpg" alt=""><a
 												class="ps-shoe__overlay"
-												href="../../views/product-detail.jsp"></a>
+												></a>
 										</div>
 										<div class="ps-shoe__content">
 											<div class="ps-shoe__variants">
 												<div class="ps-shoe__variant normal">
-													<img src="../images/shoe/shoes-02.jpg" alt=""><img
+													<img src="../images/shoe/shoes-04.jpg" alt=""><img
 														src="../images/shoe/shoes-04.jpg" alt=""><img
 														src="../images/shoe/4.jpg" alt=""><img
 														src="../images/shoe/5.jpg" alt="">
@@ -591,12 +565,12 @@
 											<a class="ps-shoe__favorite"><i class="ps-icon-heart"></i></a>
 											<img src="../images/shoe/shoes-01.jpg" alt=""><a
 												class="ps-shoe__overlay"
-												href="../../views/product-detail.jsp"></a>
+												></a>
 										</div>
 										<div class="ps-shoe__content">
 											<div class="ps-shoe__variants">
 												<div class="ps-shoe__variant normal">
-													<img src="../images/shoe/shoes-02.jpg" alt=""><img
+													<img src="../images/shoe/shoes-01.jpg" alt=""><img
 														src="../images/shoe/3.jpg" alt=""><img
 														src="../images/shoe/4.jpg" alt=""><img
 														src="../images/shoe/5.jpg" alt="">
@@ -638,7 +612,7 @@
 											<a class="ps-shoe__favorite"><i class="ps-icon-heart"></i></a>
 											<img src="../images/shoe/shoes-01.jpg" alt=""><a
 												class="ps-shoe__overlay"
-												href="../../views/product-detail.jsp"></a>
+												></a>
 										</div>
 										<div class="ps-shoe__content">
 											<div class="ps-shoe__variants">
@@ -685,7 +659,7 @@
 											<a class="ps-shoe__favorite"><i class="ps-icon-heart"></i></a>
 											<img src="../images/shoe/shoes-01.jpg" alt=""><a
 												class="ps-shoe__overlay"
-												href="../../views/product-detail.jsp"></a>
+												></a>
 										</div>
 										<div class="ps-shoe__content">
 											<div class="ps-shoe__variants">
@@ -732,7 +706,7 @@
 											<a class="ps-shoe__favorite"><i class="ps-icon-heart"></i></a>
 											<img src="../images/shoe/shoes-01.jpg" alt=""><a
 												class="ps-shoe__overlay"
-												href="../../views/product-detail.jsp"></a>
+												></a>
 										</div>
 										<div class="ps-shoe__content">
 											<div class="ps-shoe__variants">
@@ -779,7 +753,7 @@
 											<a class="ps-shoe__favorite"><i class="ps-icon-heart"></i></a>
 											<img src="../images/shoe/shoes-01.jpg" alt=""><a
 												class="ps-shoe__overlay"
-												href="../../views/product-detail.jsp"></a>
+												></a>
 										</div>
 										<div class="ps-shoe__content">
 											<div class="ps-shoe__variants">
