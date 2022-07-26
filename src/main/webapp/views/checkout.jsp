@@ -225,7 +225,7 @@
       <main class="ps-main">
         <div class="ps-checkout pt-80 pb-80">
           <div class="ps-container">
-            <form class="ps-checkout__form" action="do_action" method="post">
+            <form class="ps-checkout__form" action="/checkouts" th:object="${checkoutRequest}" method="post">
               <div class="row">
                 <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 ">
                   <div class="ps-checkout__billing">
@@ -233,37 +233,37 @@
                     <div class="form-group form-group--inline">
                       <label>First Name<span>*</span>
                       </label>
-                      <input class="form-control" type="text">
+                      <input class="form-control" type="text" name="firstname">
                     </div>
                     <div class="form-group form-group--inline">
                       <label>Last Name<span>*</span>
                       </label>
-                      <input class="form-control" type="text">
+                      <input class="form-control" type="text" name="lastname">
                     </div>
                     <div class="form-group form-group--inline">
                       <label>Company Name<span>*</span>
                       </label>
-                      <input class="form-control" type="text">
+                      <input class="form-control" type="text" name="companyname">
                     </div>
                     <div class="form-group form-group--inline">
                       <label>Email Address<span>*</span>
                       </label>
-                      <input class="form-control" type="email">
+                      <input class="form-control" type="email" name="email">
                     </div>
                     <div class="form-group form-group--inline">
                       <label>Company Name<span>*</span>
                       </label>
-                      <input class="form-control" type="text">
+                      <input class="form-control" type="text" name="companyemail">
                     </div>
                     <div class="form-group form-group--inline">
                       <label>Phone<span>*</span>
                       </label>
-                      <input class="form-control" type="text">
+                      <input class="form-control" type="text" name="phone">
                     </div>
                     <div class="form-group form-group--inline">
                       <label>Address<span>*</span>
                       </label>
-                      <input class="form-control" type="text">
+                      <input class="form-control" type="text" name="address">
                     </div>
                     <div class="form-group">
                       <div class="ps-checkbox">
@@ -274,7 +274,7 @@
                     <h3 class="mt-40"> Addition information</h3>
                     <div class="form-group form-group--inline textarea">
                       <label>Order Notes</label>
-                      <textarea class="form-control" rows="5"
+                      <textarea class="form-control" rows="5" name="message"
                         placeholder="Notes about your order, e.g. special notes for delivery."></textarea>
                     </div>
                   </div>
@@ -328,7 +328,7 @@
                           <li><a href="#"><img src="images/payment/2.png" alt=""></a></li>
                           <li><a href="#"><img src="images/payment/3.png" alt=""></a></li>
                         </ul>
-                        <button class="ps-btn ps-btn--fullwidth">Place Order<i class="ps-icon-next"></i></button>
+                        <button type="submit" class="ps-btn ps-btn--fullwidth">Place Order<i class="ps-icon-next"></i></button>
                       </div>
                     </footer>
                   </div>
